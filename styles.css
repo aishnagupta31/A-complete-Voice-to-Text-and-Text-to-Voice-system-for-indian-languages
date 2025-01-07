@@ -1,0 +1,82 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #212121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: black;
+    color:azure;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 600px;
+}
+
+h1 {
+    text-align: center;
+    color: azure;
+    font-size: 26px;
+    margin-bottom: 26px;
+}
+
+.language-select {
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #1db945;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border:none;
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: green;
+}
+
+.textarea {
+    width: 100%;
+    height: 120px;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+    color: #333;
+    background-color: #f9f9f9;
+}
+.section {
+    margin-bottom: 30px;
+}
+
+/* Labels and Inputs Styling */
+label {
+    font-size: 18px;
+    color: beige;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+}

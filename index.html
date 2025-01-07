@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice-to-Text and Text-to-Voice System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- <script>document.write('<br>'.repeat(15));</script> -->
+        <h1>Voice-to-Text and Text-to-Voice System</h1>
+
+        <!-- Language Selection -->
+        <label for="languageSelect">Select Language:</label>
+        <select id="languageSelect" class="language-select">
+            <option value="hi-IN">Hindi</option>
+            <option value="ta-IN">Tamil</option>
+            <option value="bn-BD">Bengali</option>
+            <option value="te-IN">Telugu</option>
+            <option value="mr-IN">Marathi</option>
+            <option value="en-IN">English (India)</option>
+            <option value="en-US">English</option>
+            <option value="es-ES">Spanish</option>
+        </select>
+
+        <!-- Voice to Text Section -->
+        <div class="section">
+            <h2>Voice to Text</h2>
+            <label for="voiceInput">Press the button below and start speaking:</label>
+            <button class="btn" onclick="startRecognition()">Start Voice Recognition</button>
+            <textarea id="textOutput" class="textarea" placeholder="Your voice input will appear here..."></textarea>
+        </div>
+
+        <!-- Text to Voice Section -->
+        <div class="section">
+            <h2>Text to Voice</h2>
+            <label for="textInput">Enter text here to convert it into speech:</label>
+            <textarea id="textInput" class="textarea" placeholder="Type something here to speak..."></textarea>
+            <button class="btn" onclick="speakText()">Speak Text</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
